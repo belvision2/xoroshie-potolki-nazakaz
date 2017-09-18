@@ -172,8 +172,7 @@ $(window).scroll(function() {
 
 				<div class="contacts">
 					<div class="addr">
-						Минск, Железнодорожная 33, 42<br>
-						7 минут пешком от метро Михалово
+ЧАСТНОЕ ТОРГОВОЕ УНИТАРНОЕ ПРЕДПРИЯТИЕ «Ф-ТРЭЙД» 2200121, г.Минск, ул. Притыцкого, 60/2 факс (+37529) 775 67 34 E-mail: f-trade2007@mail.ru Директор: Черепович Илья Валентинович на осн. Устава
 					</div>
 					<div class="work_time">
 					Работаем без выходных<br>
@@ -183,7 +182,7 @@ $(window).scroll(function() {
 					</p>
 					</div>
 					<div class="mmm" style="font-size:14pt;">
-						 Хорошие-Потолки.НаЗаказ.бел, ОГРН 1111111111111, ИНН 1111111111
+УНП 690613026, ОКПО 293897576000, р/с BY58OLMP30121000368810000933 в ОАО «Белгазпромбанк» код банка OLMPBY2X
 					</div>
 
 				</div>
@@ -315,7 +314,7 @@ $('.tel .callback_h_send').click(function()
 				//Comagic.push(['addOfflineRequest', {name: name,  phone: tel, message: type }]);
 					$.ajax({
 						   type: "POST",
-						   url: "/forms.php",
+						   url: "/send.php",
 						   data: "name="+name+"&tel="+tel+'&f='+type,
 						   success: function(data){
 							if (data=='ok')
@@ -354,14 +353,14 @@ $('.tel .callback_h_send').click(function()
 
 	function init(){
 		myMap = new ymaps.Map("map", {
-			center: [53.87260700514167,27.50324541667175],
-			zoom: 10,
+			center: [53.905406, 27.450038],
+			zoom: 15,
 			controls: ['zoomControl'],
 
 		});
 
 		// главный офис
-		mainPlacemark = new ymaps.Placemark([53.87260700514167,27.50324541667175], {
+		mainPlacemark = new ymaps.Placemark([53.908845, 27.468146], {
 			hintContent: 'Центральный офис',
 			balloonContent: 'Центральный офис'},
 			{
@@ -375,90 +374,7 @@ $('.tel .callback_h_send').click(function()
 
 		});
 
-		// офис1
-		Placemark1 = new ymaps.Placemark([53.87260700514167,27.50324541667175], {
-			hintContent: 'Мобильный офис',
-			balloonContent: 'Мобильный офис'},
-			{
-			iconLayout: 'default#image',
-			iconImageHref: 'http://xn----itbicjfradajh6a7a0c.xn--80aaa0acqr.xn--90ais/img/mark.png',
-            // Размеры метки.
-            iconImageSize: [47, 65],
-            // Смещение левого верхнего угла иконки относительно
-            // её "ножки" (точки привязки).
-            iconImageOffset: [-23, -65]
 
-		});
-		// офис2
-		Placemark2 = new ymaps.Placemark([53.87260700514167,27.50324541667175], {
-			hintContent: 'Мобильный офис',
-			balloonContent: 'Мобильный офис'},
-			{
-			iconLayout: 'default#image',
-			iconImageHref: 'http://xn----itbicjfradajh6a7a0c.xn--80aaa0acqr.xn--90ais/img/mark.png',
-            // Размеры метки.
-            iconImageSize: [47, 65],
-            // Смещение левого верхнего угла иконки относительно
-            // её "ножки" (точки привязки).
-            iconImageOffset: [-23, -65]
-
-		});
-		// офис3
-		Placemark3 = new ymaps.Placemark([53.87260700514167,27.50324541667175], {
-			hintContent: 'Мобильный офис',
-			balloonContent: 'Мобильный офис'},
-			{
-			iconLayout: 'default#image',
-			iconImageHref: 'http://xn----itbicjfradajh6a7a0c.xn--80aaa0acqr.xn--90ais/img/mark.png',
-            // Размеры метки.
-            iconImageSize: [47, 65],
-            // Смещение левого верхнего угла иконки относительно
-            // её "ножки" (точки привязки).
-            iconImageOffset: [-23, -65]
-
-		});
-		// офис4
-		Placemark4 = new ymaps.Placemark([53.87260700514167,27.50324541667175], {
-			hintContent: 'Мобильный офис',
-			balloonContent: 'Мобильный офис'},
-			{
-			iconLayout: 'default#image',
-			iconImageHref: 'http://xn----itbicjfradajh6a7a0c.xn--80aaa0acqr.xn--90ais/img/mark.png',
-            // Размеры метки.
-            iconImageSize: [47, 65],
-            // Смещение левого верхнего угла иконки относительно
-            // её "ножки" (точки привязки).
-            iconImageOffset: [-23, -65]
-
-		});
-		// офис5
-		Placemark5 = new ymaps.Placemark([53.87260700514167,27.50324541667175], {
-			hintContent: 'Мобильный офис',
-			balloonContent: 'Мобильный офис'},
-			{
-			iconLayout: 'default#image',
-			iconImageHref: 'http://xn----itbicjfradajh6a7a0c.xn--80aaa0acqr.xn--90ais/img/mark.png',
-            // Размеры метки.
-            iconImageSize: [47, 65],
-            // Смещение левого верхнего угла иконки относительно
-            // её "ножки" (точки привязки).
-            iconImageOffset: [-23, -65]
-
-		});
-		// офис6
-		Placemark6 = new ymaps.Placemark([53.87260700514167,27.50324541667175], {
-			hintContent: 'Мобильный офис',
-			balloonContent: 'Мобильный офис'},
-			{
-			iconLayout: 'default#image',
-			iconImageHref: 'http://xn----itbicjfradajh6a7a0c.xn--80aaa0acqr.xn--90ais/img/mark.png',
-            // Размеры метки.
-            iconImageSize: [47, 65],
-            // Смещение левого верхнего угла иконки относительно
-            // её "ножки" (точки привязки).
-            iconImageOffset: [-23, -65]
-
-		});
 
 
 
@@ -491,35 +407,7 @@ $('.tel .callback_h_send').click(function()
 </div>
 </noindex>
 
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter00000000 = new Ya.Metrika({
-                    id:00000000,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true,
-                    webvisor:true
-                });
-            } catch(e) { }
-        });
-
-        var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "../mc.yandex.ru/metrika/watch.js";
-
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/00000000" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+<!-- Yandex.Metrika informer --> <a href="https://metrika.yandex.by/stat/?id=45988749&amp;from=informer" target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/45988749/3_1_FFFFFFFF_EFEFEFFF_0_pageviews" style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="45988749" data-lang="ru" /></a> <!-- /Yandex.Metrika informer --> <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter45988749 = new Ya.Metrika({ id:45988749, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/45988749" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 
 
 
@@ -603,7 +491,7 @@ var wblocks = $('.w_blocks').children();
 					//Comagic.push(['addOfflineRequest', {name: name,  phone: tel, message: type }]);
 					$.ajax({
 						   type: "POST",
-						   url: "/forms.php",
+						   url: "/send.php",
 						   data: "name="+name+"&tel="+tel+'&f='+type,
 						   success: function(data){
 							if (data=='ok')
@@ -645,7 +533,7 @@ $('#callback-pozdr').click(function()
 					//Comagic.push(['addOfflineRequest', {name: name,  phone: tel, message: 'pozdr' }]);
 					$.ajax({
 						   type: "POST",
-						   url: "/forms.php",
+						   url: "/send.php",
 						   data: "name="+name+"&tel="+tel+'&f=pozdr',
 						   success: function(data){
 							if (data=='ok')

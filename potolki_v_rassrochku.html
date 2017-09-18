@@ -211,8 +211,8 @@ $(window).scroll(function() {
 						<span class="small">переплата</span>
 					</div>
 					<div class="usl_part" style="padding-left: 25px; width: 288px;">
-						<span class="max">36</span><span class="med">мес.</span><br>
-						<span class="small" style="padding-left: 30px;">срок кредита</span>
+						<span class="max">18</span><span class="med">мес.</span><br>
+						<span class="small" style="padding-left: 30px;">срок рассрочки</span>
 					</div>
 					<div class="clr"></div>
 				</div>
@@ -306,7 +306,7 @@ $('.tel .callback_h_send').click(function()
 				//Comagic.push(['addOfflineRequest', {name: name,  phone: tel, message: type }]);
 					$.ajax({
 						   type: "POST",
-						   url: "/forms.php",
+						   url: "/send.php",
 						   data: "name="+name+"&tel="+tel+'&f='+type,
 						   success: function(data){
 							if (data=='ok')
@@ -329,9 +329,9 @@ $('.tel .callback_h_send').click(function()
 
 		<div class="section s_standart">
 			<div class="content">
-				<h1 class="black333">Купи сейчас, плати потом!</h1>
+				<h1 class="black333">Купи сейчас в рассрочку по карте Белгазпромбанка</h1>
 				<p class="black333 f_light center" style="font-size:24px; line-height:30px;padding-top:20px;">
-У нас Вы можете заказать натяжные потолки, как по предоплате, так и в рассрочку. При этом Вы заплатите ни на копейку больше предварительно оговоренной суммы заказа! Никаких переплат!!! Мы помогаем сделать быт каждого человека лучше и комфортнее. Этому способствует сотрудничество с надежным партнером – банком «<a href="http:///" target="_blank">HOME CREDIT</a>», условия которого максимально выгодны каждому заказчику!
+У нас Вы можете заказать натяжные потолки, как по предоплате, так и в рассрочку. При этом Вы заплатите ни на копейку больше предварительно оговоренной суммы заказа! Никаких переплат!!! Мы помогаем сделать быт каждого человека лучше и комфортнее. Этому способствует сотрудничество с надежным партнером – банком «<a href="https://kartapokupok.by/ru/about/" target="_blank">Белгазпромбанк</a>», условия которого максимально выгодны каждому заказчику!
 				</p>
 
 				<div class="buy_now">
@@ -348,23 +348,23 @@ $('.tel .callback_h_send').click(function()
 					<div class="block2 now_blocks">
 						<img src="img/buy_b2.png">
 						<div>
-							Для оформления рассрочки
-							нужен только
-							<span>паспорт</span>
+							Для покупки в рассрочку
+							нужна только
+							<span>"Карта Покупок"</span>
 						</div>
 					</div>
 					<div class="block3 now_blocks">
 						<img src="img/buy_b3.png">
 						<div>
 							Вы выбираете удобный период<br>
-							<span>до 36 месяцев</span>
+							<span>до 18 месяцев</span>
 						</div>
 					</div>
 					<div class="block4 now_blocks">
 						<img src="img/buy_b4.png">
 						<div>
-							Для заключения договора требуется<br>
-							всего лишь <span>25 минут</span>
+							Не нужно ничего оформлять<br>
+							 <span>нужна только карта</span>
 						</div>
 					</div>
 					<div class="block5 now_blocks">
@@ -629,7 +629,7 @@ $('#callback-send2').click(function()
 				//Comagic.push(['addOfflineRequest', {name: name,  phone: tel, message: 'callback2' }]);
 					$.ajax({
 						   type: "POST",
-						   url: "/forms.php",
+						   url: "/send.php",
 						   data: "name="+name+"&tel="+tel+'&f=callback2',
 						   success: function(data){
 							if (data=='ok')
@@ -859,7 +859,7 @@ function move_callback(anchor, instance, framenumber){
 						Узнайте больше о скидках компании: <span class="comagic_phone">8 029 612-65-65</span>
 					</div>
 					<div class="black d2">
-						e-mail: 5730844@gmail.com
+						e-mail: vlad_abramov@tut.by
 
 <noindex>
 
@@ -886,35 +886,7 @@ function move_callback(anchor, instance, framenumber){
 			</div>
 		</div>
 
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter00000000 = new Ya.Metrika({
-                    id:00000000,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true,
-                    webvisor:true
-                });
-            } catch(e) { }
-        });
-
-        var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "../mc.yandex.ru/metrika/watch.js";
-
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/00000000" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+<!-- Yandex.Metrika informer --> <a href="https://metrika.yandex.by/stat/?id=45988749&amp;from=informer" target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/45988749/3_1_FFFFFFFF_EFEFEFFF_0_pageviews" style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="45988749" data-lang="ru" /></a> <!-- /Yandex.Metrika informer --> <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter45988749 = new Ya.Metrika({ id:45988749, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/45988749" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 
 
 
@@ -991,7 +963,7 @@ var wblocks = $('.w_blocks').children();
 					//Comagic.push(['addOfflineRequest', {name: name,  phone: tel, message: type }]);
 					$.ajax({
 						   type: "POST",
-						   url: "/forms.php",
+						   url: "/send.php",
 						   data: "name="+name+"&tel="+tel+'&f='+type,
 						   success: function(data){
 							if (data=='ok')
@@ -1025,7 +997,7 @@ var wblocks = $('.w_blocks').children();
 					//Comagic.push(['addOfflineRequest', {name: name,  phone: tel, message: type }]);
 					$.ajax({
 						   type: "POST",
-						   url: "/forms.php",
+						   url: "/send.php",
 						   data: "name="+name+"&tel="+tel+'&f='+type,
 						   success: function(data){
 							if (data=='ok')
@@ -1065,7 +1037,7 @@ $('#callback-pozdr').click(function()
 					//Comagic.push(['addOfflineRequest', {name: name,  phone: tel, message: 'pozdr' }]);
 					$.ajax({
 						   type: "POST",
-						   url: "/forms.php",
+						   url: "/send.php",
 						   data: "name="+name+"&tel="+tel+'&f=pozdr',
 						   success: function(data){
 							if (data=='ok')

@@ -294,7 +294,7 @@ $('#callback-isend').click(function()
 				//Comagic.push(['addOfflineRequest', {name: name,  phone: tel,  email: mail,  message: 'market' }]);
 					$.ajax({
 						   type: "POST",
-						   url: "/forms.php",
+						   url: "/send.php",
 						   data: "name="+name+"&tel="+tel+'&f=item_send'+"&art="+art+"&mail="+mail+"&text="+text+'&id=66',
 						   success: function(data){
 							if (data=='ok')
@@ -412,7 +412,7 @@ $('.tel .callback_h_send').click(function()
 				//Comagic.push(['addOfflineRequest', {name: name,  phone: tel, message: type }]);
 					$.ajax({
 						   type: "POST",
-						   url: "/forms.php",
+						   url: "/send.php",
 						   data: "name="+name+"&tel="+tel+'&f='+type,
 						   success: function(data){
 							if (data=='ok')
@@ -709,7 +709,7 @@ $(window).scroll( function(){
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">130<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="2.html" class="c_yb">Купить</a></div>
+								<div class="c_price">5<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="2.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -732,7 +732,7 @@ $(window).scroll( function(){
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">590<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="52.html" class="c_yb">Купить</a></div>
+								<div class="c_price">15<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="52.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -755,7 +755,7 @@ $(window).scroll( function(){
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">120<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="5.html" class="c_yb">Купить</a></div>
+								<div class="c_price">9,7<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="5.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -778,7 +778,7 @@ $(window).scroll( function(){
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">700<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="53.html" class="c_yb">Купить</a></div>
+								<div class="c_price">30<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="53.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -801,7 +801,7 @@ $(window).scroll( function(){
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">590<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="33.html" class="c_yb">Купить</a></div>
+								<div class="c_price">15<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="33.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -824,7 +824,7 @@ $(window).scroll( function(){
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">750<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="54.html" class="c_yb">Купить</a></div>
+								<div class="c_price">15<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="54.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -847,7 +847,7 @@ $(window).scroll( function(){
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">590<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="55.html" class="c_yb">Купить</a></div>
+								<div class="c_price">15<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="55.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -870,7 +870,7 @@ $(window).scroll( function(){
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">130<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="56.html" class="c_yb">Купить</a></div>
+								<div class="c_price">5<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="56.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -893,7 +893,7 @@ $(window).scroll( function(){
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">590<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="57.html" class="c_yb">Купить</a></div>
+								<div class="c_price">15<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="57.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -916,7 +916,7 @@ $(window).scroll( function(){
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">700<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="58.html" class="c_yb">Купить</a></div>
+								<div class="c_price">30<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="58.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -939,7 +939,7 @@ $(window).scroll( function(){
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">590<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="59.html" class="c_yb">Купить</a></div>
+								<div class="c_price">15<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="59.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -962,7 +962,7 @@ $(window).scroll( function(){
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">590<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="60.html" class="c_yb">Купить</a></div>
+								<div class="c_price">15<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="60.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -985,7 +985,7 @@ $(window).scroll( function(){
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">590<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="61.html" class="c_yb">Купить</a></div>
+								<div class="c_price">15<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="61.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -1008,7 +1008,7 @@ $(window).scroll( function(){
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">120<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="62.html" class="c_yb">Купить</a></div>
+								<div class="c_price">9,7<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="62.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -1031,7 +1031,7 @@ $(window).scroll( function(){
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">130<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="63.html" class="c_yb">Купить</a></div>
+								<div class="c_price">5<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="63.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -1054,7 +1054,7 @@ $(window).scroll( function(){
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">750<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="64.html" class="c_yb">Купить</a></div>
+								<div class="c_price">15<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="64.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -1077,7 +1077,7 @@ $(window).scroll( function(){
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">590<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="65.html" class="c_yb">Купить</a></div>
+								<div class="c_price">15<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="65.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -1100,7 +1100,7 @@ $(window).scroll( function(){
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">590<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="67.html" class="c_yb">Купить</a></div>
+								<div class="c_price">15<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="67.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -1123,7 +1123,7 @@ $(window).scroll( function(){
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">120<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="68.html" class="c_yb">Купить</a></div>
+								<div class="c_price">9,7<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="68.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -1146,7 +1146,7 @@ $(window).scroll( function(){
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">590<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="69.html" class="c_yb">Купить</a></div>
+								<div class="c_price">15<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="69.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -1169,7 +1169,7 @@ $(window).scroll( function(){
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">590<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="70.html" class="c_yb">Купить</a></div>
+								<div class="c_price">15<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="70.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -1192,7 +1192,7 @@ $(window).scroll( function(){
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">590<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="71.html" class="c_yb">Купить</a></div>
+								<div class="c_price">15<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="71.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -1215,7 +1215,7 @@ $(window).scroll( function(){
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">590<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="72.html" class="c_yb">Купить</a></div>
+								<div class="c_price">15<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="72.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -1238,7 +1238,7 @@ $(window).scroll( function(){
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">590<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="73.html" class="c_yb">Купить</a></div>
+								<div class="c_price">15<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="73.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -1261,7 +1261,7 @@ $(window).scroll( function(){
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">130<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="74.html" class="c_yb">Купить</a></div>
+								<div class="c_price">5<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="74.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -1284,7 +1284,7 @@ $(window).scroll( function(){
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">590<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="75.html" class="c_yb">Купить</a></div>
+								<div class="c_price">15<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="75.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -1307,7 +1307,7 @@ $(window).scroll( function(){
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">130<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="76.html" class="c_yb">Купить</a></div>
+								<div class="c_price">5<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="76.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -1330,7 +1330,7 @@ $(window).scroll( function(){
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">590<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="77.html" class="c_yb">Купить</a></div>
+								<div class="c_price">15<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="77.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -1353,7 +1353,7 @@ $(window).scroll( function(){
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">120<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="78.html" class="c_yb">Купить</a></div>
+								<div class="c_price">9,7<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="78.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -1376,7 +1376,7 @@ $(window).scroll( function(){
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">700<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="79.html" class="c_yb">Купить</a></div>
+								<div class="c_price">30<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="79.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -1399,7 +1399,7 @@ $(window).scroll( function(){
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">700<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="80.html" class="c_yb">Купить</a></div>
+								<div class="c_price">30<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="80.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -1435,7 +1435,7 @@ $('#callback-send2').click(function()
 				//Comagic.push(['addOfflineRequest', {name: name,  phone: tel, message: 'callback2' }]);
 					$.ajax({
 						   type: "POST",
-						   url: "/forms.php",
+						   url: "/send.php",
 						   data: "name="+name+"&tel="+tel+'&f=callback2',
 						   success: function(data){
 							if (data=='ok')
@@ -1494,7 +1494,7 @@ $('#callback-send2').click(function()
 						Узнайте больше о скидках компании: <span class="comagic_phone">8 029 612-65-65</span>
 					</div>
 					<div class="black d2">
-						e-mail: 5730844@gmail.com
+						e-mail: vlad_abramov@tut.by
 
 <noindex>
 
@@ -1521,35 +1521,7 @@ $('#callback-send2').click(function()
 			</div>
 		</div>
 
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter00000000 = new Ya.Metrika({
-                    id:00000000,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true,
-                    webvisor:true
-                });
-            } catch(e) { }
-        });
-
-        var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "../../mc.yandex.ru/metrika/watch.js";
-
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/00000000" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+<!-- Yandex.Metrika informer --> <a href="https://metrika.yandex.by/stat/?id=45988749&amp;from=informer" target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/45988749/3_1_FFFFFFFF_EFEFEFFF_0_pageviews" style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="45988749" data-lang="ru" /></a> <!-- /Yandex.Metrika informer --> <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter45988749 = new Ya.Metrika({ id:45988749, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/45988749" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 
 
 
@@ -1626,7 +1598,7 @@ var wblocks = $('.w_blocks').children();
 					//Comagic.push(['addOfflineRequest', {name: name,  phone: tel, message: type }]);
 					$.ajax({
 						   type: "POST",
-						   url: "/forms.php",
+						   url: "/send.php",
 						   data: "name="+name+"&tel="+tel+'&f='+type,
 						   success: function(data){
 							if (data=='ok')
@@ -1660,7 +1632,7 @@ var wblocks = $('.w_blocks').children();
 					//Comagic.push(['addOfflineRequest', {name: name,  phone: tel, message: type }]);
 					$.ajax({
 						   type: "POST",
-						   url: "/forms.php",
+						   url: "/send.php",
 						   data: "name="+name+"&tel="+tel+'&f='+type,
 						   success: function(data){
 							if (data=='ok')
@@ -1700,7 +1672,7 @@ $('#callback-pozdr').click(function()
 					//Comagic.push(['addOfflineRequest', {name: name,  phone: tel, message: 'pozdr' }]);
 					$.ajax({
 						   type: "POST",
-						   url: "/forms.php",
+						   url: "/send.php",
 						   data: "name="+name+"&tel="+tel+'&f=pozdr',
 						   success: function(data){
 							if (data=='ok')

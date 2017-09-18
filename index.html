@@ -367,7 +367,7 @@ $('.tel .callback_h_send').click(function()
 				//Comagic.push(['addOfflineRequest', {name: name,  phone: tel, message: type }]);
 					$.ajax({
 						   type: "POST",
-						   url: "/forms.php",
+						   url: "/send.php",
 						   data: "name="+name+"&tel="+tel+'&f='+type,
 						   success: function(data){
 							if (data=='ok')
@@ -591,7 +591,8 @@ var cost=99;
 
 <div class="section gal_potolki">
 			<div class="content">
-				<h1 style="color:#fbe60b;padding-top:15px;">Распродажа до 24 августа</h1>
+				<h1 style="color:#fbe60b;padding-top:15px;">Распродажа до <span class="end-of-action-date" style="    background: none;font-size: 55px;">24 августа</span></h1>
+
 
 				  <div class="carousel">
 					<div class="carousel-button-left"><a href="#"></a></div>
@@ -616,7 +617,7 @@ var cost=99;
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">99<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/1.html" class="c_yb">Купить</a></div>
+								<div class="c_price">3<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/1.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -639,7 +640,7 @@ var cost=99;
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">130<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/2.html" class="c_yb">Купить</a></div>
+								<div class="c_price">4<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/2.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -662,7 +663,7 @@ var cost=99;
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">590<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/52.html" class="c_yb">Купить</a></div>
+								<div class="c_price">15<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/52.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -685,7 +686,7 @@ var cost=99;
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">120<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/5.html" class="c_yb">Купить</a></div>
+								<div class="c_price">9,7<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/5.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -708,7 +709,7 @@ var cost=99;
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">700<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/53.html" class="c_yb">Купить</a></div>
+								<div class="c_price">30<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/53.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -731,7 +732,7 @@ var cost=99;
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">590<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/33.html" class="c_yb">Купить</a></div>
+								<div class="c_price">15<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/33.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -754,7 +755,7 @@ var cost=99;
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">750<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/54.html" class="c_yb">Купить</a></div>
+								<div class="c_price">15<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/54.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -777,7 +778,7 @@ var cost=99;
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">590<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/55.html" class="c_yb">Купить</a></div>
+								<div class="c_price">15<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/55.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -800,7 +801,7 @@ var cost=99;
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">130<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/56.html" class="c_yb">Купить</a></div>
+								<div class="c_price">5<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/56.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -823,7 +824,7 @@ var cost=99;
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">590<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/57.html" class="c_yb">Купить</a></div>
+								<div class="c_price">15<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/57.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -846,7 +847,7 @@ var cost=99;
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">700<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/58.html" class="c_yb">Купить</a></div>
+								<div class="c_price">30<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/58.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -869,7 +870,7 @@ var cost=99;
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">590<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/59.html" class="c_yb">Купить</a></div>
+								<div class="c_price">15<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/59.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -892,7 +893,7 @@ var cost=99;
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">590<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/60.html" class="c_yb">Купить</a></div>
+								<div class="c_price">15<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/60.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -915,7 +916,7 @@ var cost=99;
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">590<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/61.html" class="c_yb">Купить</a></div>
+								<div class="c_price">15<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/61.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -938,7 +939,7 @@ var cost=99;
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">120<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/62.html" class="c_yb">Купить</a></div>
+								<div class="c_price">9,7<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/62.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -961,7 +962,7 @@ var cost=99;
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">130<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/63.html" class="c_yb">Купить</a></div>
+								<div class="c_price">5<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/63.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -984,7 +985,7 @@ var cost=99;
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">750<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/64.html" class="c_yb">Купить</a></div>
+								<div class="c_price">15<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/64.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -1007,7 +1008,7 @@ var cost=99;
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">590<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/65.html" class="c_yb">Купить</a></div>
+								<div class="c_price">15<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/65.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -1030,7 +1031,7 @@ var cost=99;
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">700<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/66.html" class="c_yb">Купить</a></div>
+								<div class="c_price">30<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/66.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -1053,7 +1054,7 @@ var cost=99;
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">590<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/67.html" class="c_yb">Купить</a></div>
+								<div class="c_price">15<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/67.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -1076,7 +1077,7 @@ var cost=99;
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">120<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/68.html" class="c_yb">Купить</a></div>
+								<div class="c_price">9,7<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/68.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -1099,7 +1100,7 @@ var cost=99;
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">590<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/69.html" class="c_yb">Купить</a></div>
+								<div class="c_price">15<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/69.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -1122,7 +1123,7 @@ var cost=99;
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">590<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/70.html" class="c_yb">Купить</a></div>
+								<div class="c_price">15<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/70.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -1145,7 +1146,7 @@ var cost=99;
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">590<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/71.html" class="c_yb">Купить</a></div>
+								<div class="c_price">15<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/71.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -1168,7 +1169,7 @@ var cost=99;
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">590<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/72.html" class="c_yb">Купить</a></div>
+								<div class="c_price">15<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/72.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -1191,7 +1192,7 @@ var cost=99;
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">590<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/73.html" class="c_yb">Купить</a></div>
+								<div class="c_price">15<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/73.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -1214,7 +1215,7 @@ var cost=99;
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">130<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/74.html" class="c_yb">Купить</a></div>
+								<div class="c_price">5<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/74.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -1237,7 +1238,7 @@ var cost=99;
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">590<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/75.html" class="c_yb">Купить</a></div>
+								<div class="c_price">15<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/75.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -1260,7 +1261,7 @@ var cost=99;
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">130<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/76.html" class="c_yb">Купить</a></div>
+								<div class="c_price">5<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/76.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -1283,7 +1284,7 @@ var cost=99;
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">590<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/77.html" class="c_yb">Купить</a></div>
+								<div class="c_price">15<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/77.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -1306,7 +1307,7 @@ var cost=99;
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">120<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/78.html" class="c_yb">Купить</a></div>
+								<div class="c_price">9,7<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/78.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -1329,7 +1330,7 @@ var cost=99;
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">700<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/79.html" class="c_yb">Купить</a></div>
+								<div class="c_price">30<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/79.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -1352,7 +1353,7 @@ var cost=99;
 									<div style="padding-top: 5px">100 см</div>
 									<div class="clr" style="float:none;"></div>
 								</div>
-								<div class="c_price">700<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/80.html" class="c_yb">Купить</a></div>
+								<div class="c_price">30<span style="font-family:arial; font-weight: bold;"> р.</span> <a href="market/80.html" class="c_yb">Купить</a></div>
 
 							</div>
 							<div class="clr"></div>
@@ -1386,7 +1387,7 @@ var cost=99;
 					<div class="after4">
 						<p class="ph">Доставка &mdash; 0 рублей</p>
 						<p>
-						Доставим натяжные потолки и комплектующие быстро и совершенно бесплатно в любое удобное время. Работаем для Вас ежедневно!
+						Доставим натяжные потолки в радиусе 25 км от Минска и комплектующие быстро и совершенно бесплатно в любое удобное время. Работаем для Вас ежедневно!
 						</p>
 					</div>
 				</div>
@@ -1459,7 +1460,7 @@ $('#callback-send2').click(function()
 				//Comagic.push(['addOfflineRequest', {name: name,  phone: tel, message: 'callback2' }]);
 					$.ajax({
 						   type: "POST",
-						   url: "/forms.php",
+						   url: "/send.php",
 						   data: "name="+name+"&tel="+tel+'&f=callback2',
 						   success: function(data){
 							if (data=='ok')
@@ -1707,17 +1708,17 @@ $(window).scroll( function(){
 		<div class="section s30">
 			<div class="content">
 				<div class="txt">
-					<h1>Потолки без предоплаты</h1>
+					<h1>Рассрочка картой Белгазпромбанка</h1>
 					<ul>
-						<li>Первый взнос мы платим за вас</li>
-						<li>Переплата по кредиту 0%</li>
-						<li>100% одобрение кредита банком</li>
+						<li>Рассрочка до 18 месяцев</li>
+						<li>0% комиссий и переплат</li>
+						<li>Бесплатное оформление</li>
 					</ul>
 
 				</div>
 
 
-					<a  class="btn b_blue" href="potolki_v_rassrochku.html">Узнать подробности</a>
+					<a  class="btn b_blue" href="https://kartapokupok.by/ru/about/">Узнать подробности</a>
 
 
 			</div>
@@ -1931,7 +1932,7 @@ function move_callback(anchor, instance, framenumber){
 						Узнайте больше о скидках компании: <span class="comagic_phone">8 029 612-65-65</span>
 					</div>
 					<div class="black d2">
-						e-mail: 5730844@gmail.com
+						e-mail: vlad_abramov@tut.byА
 
 <noindex>
 
@@ -1959,34 +1960,7 @@ function move_callback(anchor, instance, framenumber){
 		</div>
 
 <!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter00000000 = new Ya.Metrika({
-                    id:00000000,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true,
-                    webvisor:true
-                });
-            } catch(e) { }
-        });
-
-        var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "../mc.yandex.ru/metrika/watch.js";
-
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/00000000" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+<!-- Yandex.Metrika informer --> <a href="https://metrika.yandex.by/stat/?id=45988749&amp;from=informer" target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/45988749/3_1_FFFFFFFF_EFEFEFFF_0_pageviews" style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="45988749" data-lang="ru" /></a> <!-- /Yandex.Metrika informer --> <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter45988749 = new Ya.Metrika({ id:45988749, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/45988749" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 
 
 
@@ -2063,7 +2037,7 @@ var wblocks = $('.w_blocks').children();
 					//Comagic.push(['addOfflineRequest', {name: name,  phone: tel, message: type }]);
 					$.ajax({
 						   type: "POST",
-						   url: "/forms.php",
+						   url: "/send.php",
 						   data: "name="+name+"&tel="+tel+'&f='+type,
 						   success: function(data){
 							if (data=='ok')
@@ -2097,7 +2071,7 @@ var wblocks = $('.w_blocks').children();
 					//Comagic.push(['addOfflineRequest', {name: name,  phone: tel, message: type }]);
 					$.ajax({
 						   type: "POST",
-						   url: "/forms.php",
+						   url: "/send.php",
 						   data: "name="+name+"&tel="+tel+'&f='+type,
 						   success: function(data){
 							if (data=='ok')
@@ -2137,7 +2111,7 @@ $('#callback-pozdr').click(function()
 					//Comagic.push(['addOfflineRequest', {name: name,  phone: tel, message: 'pozdr' }]);
 					$.ajax({
 						   type: "POST",
-						   url: "/forms.php",
+						   url: "/send.php",
 						   data: "name="+name+"&tel="+tel+'&f=pozdr',
 						   success: function(data){
 							if (data=='ok')
