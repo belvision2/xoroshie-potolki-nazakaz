@@ -219,7 +219,7 @@ $(window).scroll(function() {
 									<div class="ger"></div>
 								<div class="inner_block">
 									<div class="inner_text">Натяжной потолок за</div>
-									 <img src="img/mat_price.png">
+									 <span style=" font-size: 70px;color: #fff;text-shadow: 1px 1px 2px black, 0 0 1em black;">3 руб/м<sup>2</sup></span>
 
 								</div>
 							   <img src="img/slider_index/p1.jpg">
@@ -230,7 +230,7 @@ $(window).scroll(function() {
 								<div class="ger"></div>
 								<div class="inner_block">
 									<div class="inner_text">Натяжной потолок за</div>
-									 <img src="img/gl.png">
+									 <span style=" font-size: 70px;color: #fff;text-shadow: 1px 1px 2px black, 0 0 1em black;">4 руб/м<sup>2</sup></span>
 
 								</div>
 							    <img src="img/slider_index/p5.jpg">
@@ -242,7 +242,7 @@ $(window).scroll(function() {
 								<div class="ger"></div>
 								<div class="inner_block">
 									<div class="inner_text">Натяжной потолок за</div>
-									 <img src="img/ur.png">
+									 <span style=" font-size: 70px;color: #fff;text-shadow: 1px 1px 2px black, 0 0 1em black;">56 руб/м<sup>2</sup></span>
 
 								</div>
 							    <img src="img/slider_index/p2.jpg">
@@ -254,7 +254,7 @@ $(window).scroll(function() {
 								<div class="ger"></div>
 								<div class="inner_block">
 									<div class="inner_text">Натяжной потолок за</div>
-									 <img src="img/ft.png">
+									 <span style=" font-size: 70px;color: #fff;text-shadow: 1px 1px 2px black, 0 0 1em black;">56 руб/м<sup>2</sup></span>
 
 								</div>
 							    <img src="img/slider_index/p3.jpg">
@@ -266,7 +266,7 @@ $(window).scroll(function() {
 								<div class="ger"></div>
 								<div class="inner_block">
 									<div class="inner_text">Натяжной потолок за</div>
-									 <img src="img/zn.png">
+<span style=" font-size: 70px;color: #fff;text-shadow: 1px 1px 2px black, 0 0 1em black;">50 руб/м<sup>2</sup></span>
 
 								</div>
 							    <img src="img/slider_index/p4.jpg">
@@ -373,7 +373,7 @@ $('.tel .callback_h_send').click(function()
 							if (data=='ok')
 							{
 								//alert ('Заявка успешно отправлена');
-								SendComagic(name,tel,type,'');
+								//      й        SendComagic(name,tel,type,'');
 								$('.callback_h_tel').val('');
 								$('#spasibo').fadeIn(300);
 
@@ -1932,7 +1932,7 @@ function move_callback(anchor, instance, framenumber){
 						Узнайте больше о скидках компании: <span class="comagic_phone">8 029 612-65-65</span>
 					</div>
 					<div class="black d2">
-						e-mail: vlad_abramov@tut.byА
+						e-mail: vlad_abramov@tut.by
 
 <noindex>
 
@@ -2037,7 +2037,7 @@ var wblocks = $('.w_blocks').children();
 					//Comagic.push(['addOfflineRequest', {name: name,  phone: tel, message: type }]);
 					$.ajax({
 						   type: "POST",
-						   url: "/send.php",
+						   url: "send.php",
 						   data: "name="+name+"&tel="+tel+'&f='+type,
 						   success: function(data){
 							if (data=='ok')

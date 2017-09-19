@@ -439,7 +439,7 @@ $('#callback-send_otz').click(function()
 				//Comagic.push(['addOfflineRequest', {name: name,  phone: tel, message: 'otz' }]);
 					$.ajax({
 						   type: "POST",
-						   url: "forms.php",
+						   url: "send.php",
 						   data: "name="+name+"&tel="+tel+'&txt='+txt+'&f=otz',
 						   success: function(data){
 							if (data=='ok')
